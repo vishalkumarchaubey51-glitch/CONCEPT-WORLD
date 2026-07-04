@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Concept World - Autonomous Exhibition Design AI. Transform your exhibition presence with AI-powered stall design, instant 3D visualization, and real-time collaboration.">
+    <meta name="keywords" content="AI exhibition design, smart stall designer, automated booth design, exhibition AI, digital stall visualization, Patna exhibition design">
+    <meta name="author" content="Concept World">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.conceptworld.in/">
+    <meta property="og:title" content="Concept World | AI-Powered Exhibition Design">
+    <meta property="og:description" content="Autonomous exhibition design platform with instant 3D visualization and real-time collaboration.">
+    <meta property="og:image" content="https://www.conceptworld.in/image/a1.jpeg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Concept World | AI Exhibition Design">
+    <meta property="twitter:description" content="Transform exhibition design with AI automation and instant visualization.">
+    <meta property="twitter:image" content="https://www.conceptworld.in/image/a1.jpeg">
+    
+    <title>Concept World | AI-Powered Exhibition Design Platform</title>
+    
+    <link rel="icon" type="image/x-icon" href="image/a1.jpeg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-dark: #050505;
+            --secondary-dark: #0a0a0a;
+            --accent-green: #10b981;
+            --accent-green-dark: #059669;
+            --text-primary: #ffffff;
+            --text-secondary: #d1d5db;
+            --border-color: rgba(16, 185, 129, 0.2);
+            --glow-color: rgba(16, 185, 129, 0.5);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Manrope', sans-serif;
+            background: linear-gradient(135deg, var(--primary-dark) 0%, #0f0f0f 50%, var(--secondary-dark) 100%);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* ===== NAVBAR ===== */
+        .navbar {
+            position: fixed;
+            top: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            max-width: 900px;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border-color);
+            border-radius: 50px;
+            padding: 1rem 2rem;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 30px var(--glow-color);
+            transition: all 0.3s ease;
+        }
+
+        .navbar:hover {
+            background: rgba(0, 0, 0, 0.5);
+            border-color: rgba(16, 185, 129, 0.4);
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1.3rem;
+            font-weight: 900;
+            text-decoration: none;
+            color: var(--accent-green);
+            text-shadow: 0 0 8px var(--glow-color);
+            letter-spacing: -0.5px;
+            transition: all 0.3s ease;
+        }
+
+        .navbar-brand:hover {
+            transform: scale(1.05);
+        }
+
+        .navbar-brand img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .navbar-brand:hover img {
+            transform: scale(1.1);
+        }
+
+        .navbar-nav {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--text-secondary);
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.2px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-link:hover {
+            color: var(--accent-green);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent-green);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .cta-button {
+            background: var(--accent-green);
+            color: var(--primary-dark);
+            padding: 0.6rem 1.5rem;
+            border-radius: 50px;
+            border: none;
+            font-weight: 700;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+        }
+
+        .cta-button:hover {
+            background: var(--accent-green-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 0 30px rgba(16, 185, 129, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                width: 95%;
+                padding: 0.75rem 1rem;
+                top: 1rem;
+            }
+
+            .navbar-nav {
+                display: none;
+                gap: 1rem;
+            }
+
+            .navbar-nav.active {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(0, 0, 0, 0.8);
+                padding: 1rem;
+                border-radius: 0 0 20px 20px;
+                border: 1px solid var(--border-color);
+            }
+
+            .navbar-brand span {
+                font-size: 1rem;
+            }
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            margin-top: 150px;
+            padding: 100px 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 1000px;
+            height: 1000px;
+            background: radial-gradient(circle, rgba(16, 185, 129, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -50%;
+            left: -50%;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(16, 185, 129, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 8s ease-in-out infinite reverse;
+            pointer-events: none;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(30px); }
+        }
+
+        .hero-content {
+            max-width: 900px;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            letter-spacing: -1px;
+            animation: slideUp 0.8s ease;
+        }
+
+        .hero-highlight {
+            background: linear-gradient(135deg, var(--accent-green) 0%, #34d399 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 30px var(--glow-color);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.8;
+            animation: slideUp 0.8s ease 0.1s backwards;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: slideUp 0.8s ease 0.2s backwards;
+        }
+
+        .btn-primary {
+            background: var(--accent-green);
+            color: var(--primary-dark);
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 30px rgba(16, 185, 129, 0.3);
+            text-decoration: none;
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-green-dark);
+            transform: translateY(-4px);
+            box-shadow: 0 0 50px rgba(16, 185, 129, 0.6);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--accent-green);
+            padding: 1rem 2.5rem;
+            border: 2px solid var(--accent-green);
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-secondary:hover {
+            background: var(--accent-green);
+            color: var(--primary-dark);
+            transform: translateY(-4px);
+            box-shadow: 0 0 50px rgba(16, 185, 129, 0.4);
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+            padding-top: 3rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .stat-item {
+            text-align: center;
+            animation: slideUp 0.8s ease 0.3s backwards;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--accent-green);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ===== FEATURES SECTION ===== */
+        .features {
+            padding: 120px 20px;
+            background: linear-gradient(180deg, transparent 0%, rgba(16, 185, 129, 0.05) 100%);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+
+        .section-header h2 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        .section-header p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 2.5rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(16, 185, 129, 0.1) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .feature-card:hover {
+            border-color: var(--accent-green);
+            background: rgba(16, 185, 129, 0.03);
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px var(--glow-color);
+        }
+
+        .feature-card:hover::before {
+            opacity: 1;
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--accent-green);
+            margin-bottom: 1.5rem;
+            text-shadow: 0 0 20px var(--glow-color);
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .feature-card p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        /* ===== PORTFOLIO/PROJECTS SECTION ===== */
+        .portfolio {
+            padding: 120px 20px;
+            background: var(--primary-dark);
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-top: 3rem;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            group: true;
+        }
+
+        .project-image {
+            width: 100%;
+            height: 250px;
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(16, 185, 129, 0.05));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover .project-image img {
+            transform: scale(1.1);
+        }
+
+        .project-info {
+            padding: 2rem;
+        }
+
+        .project-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .project-category {
+            font-size: 0.85rem;
+            color: var(--accent-green);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+
+        .project-description {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .project-card:hover {
+            border-color: var(--accent-green);
+            background: rgba(16, 185, 129, 0.05);
+            transform: translateY(-15px);
+            box-shadow: 0 25px 50px var(--glow-color);
+        }
+
+        /* ===== CTA SECTION ===== */
+        .cta-section {
+            padding: 100px 20px;
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(16, 185, 129, 0.05) 100%);
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            text-align: center;
+            margin: 80px 0;
+        }
+
+        .cta-section h2 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        .cta-section p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto 2.5rem;
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background: var(--secondary-dark);
+            border-top: 1px solid var(--border-color);
+            padding: 4rem 2rem 2rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+            text-align: left;
+        }
+
+        .footer-section h4 {
+            color: var(--accent-green);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        .footer-section a:hover {
+            color: var(--accent-green);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--border-color);
+            padding-top: 2rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .social-link {
+            width: 45px;
+            height: 45px;
+            border: 1px solid var(--border-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-green);
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-link:hover {
+            background: var(--accent-green);
+            color: var(--primary-dark);
+            border-color: var(--accent-green);
+            transform: translateY(-3px);
+        }
+
+        /* ===== ANIMATIONS & UTILITIES ===== */
+        .text-gradient {
+            background: linear-gradient(135deg, var(--accent-green) 0%, #34d399 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .glowing-text {
+            text-shadow: 0 0 20px var(--glow-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .hero {
+                margin-top: 100px;
+                padding: 60px 20px;
+                min-height: auto;
+            }
+
+            .section-header h2 {
+                font-size: 2rem;
+            }
+
+            .features-grid,
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .btn-primary,
+            .btn-secondary {
+                width: 100%;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .footer-section {
+                text-align: center;
+            }
+
+            .footer-section a {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#" class="navbar-brand">
+            <img src="Logo/LO1.jpeg" alt="Logo">
+            <span>CONCEPT</span>
+        </a>
+        <ul class="navbar-nav">
+            <li><a href="#features" class="nav-link">Features</a></li>
+            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+            <li><a href="#" class="nav-link">About</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><button class="cta-button">Get Started</button></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>
+                Transform Your Exhibition <span class="hero-highlight">Presence</span>
+            </h1>
+            <p>
+                AI-powered stall design with instant 3D visualization, real-time collaboration, and expert execution. 
+                From concept to installation — we handle everything.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn-primary">Start Design</button>
+                <button class="btn-secondary">View Showcase</button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Projects Delivered</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">350+</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">99%</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose <span class="text-gradient">Concept World</span></h2>
+                <p>Industry-leading exhibition design with cutting-edge technology and unmatched expertise</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI-Powered Design</h3>
+                    <p>Intelligent stall design system that learns from your preferences and generates perfect layouts instantly.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3>3D Visualization</h3>
+                    <p>See your exhibition stall in real-time 3D before fabrication begins. Make changes on the fly.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h3>Real-Time Collab</h3>
+                    <p>Collaborate with our design team in real-time. Share ideas, get instant feedback, iterate faster.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3>Expert Fabrication</h3>
+                    <p>Premium materials, superior craftsmanship, and precision execution. Your vision, perfectly realized.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Fast Execution</h3>
+                    <p>From design approval to on-site installation. We deliver at speed without compromising quality.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Dedicated support team available round-the-clock. We're here when you need us, always.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured <span class="text-gradient">Showcase</span></h2>
+                <p>A selection of our most impactful exhibition designs</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="image/a1.jpeg" alt="Project 1" onerror="this.style.display='none'">
+                        <span style="display:none;">🏗️</span>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-category">Tech Exhibition</div>
+                        <h3 class="project-title">Digital Innovation Expo</h3>
+                        <p class="project-description">Premium tech booth with interactive displays and immersive experience zones.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="image/a1.jpeg" alt="Project 2" onerror="this.style.display='none'">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-category">Pharma Exhibition</div>
+                        <h3 class="project-title">MedTech Healthcare Pavilion</h3>
+                        <p class="project-description">Professional healthcare booth designed for maximum client engagement and product visibility.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="image/a1.jpeg" alt="Project 3" onerror="this.style.display='none'">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-category">Trade Show</div>
+                        <h3 class="project-title">Industrial Solutions Hub</h3>
+                        <p class="project-description">Heavy-duty trade show booth showcasing industrial equipment with custom fabrication.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to <span class="text-gradient">Transform</span> Your Exhibition?</h2>
+            <p>Join hundreds of satisfied clients who have elevated their exhibition presence with Concept World</p>
+            <button class="btn-primary">Start Your Project Today</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Stall Design</a></li>
+                        <li><a href="#">3D Visualization</a></li>
+                        <li><a href="#">Fabrication</a></li>
+                        <li><a href="#">Installation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:+918765432100">+91 876 543 2100</a></li>
+                        <li><a href="mailto:hello@conceptworld.in">hello@conceptworld.in</a></li>
+                        <li><a href="#">Patna, Bihar</a></li>
+                        <li><a href="#">Available 24/7</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-link" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-link" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="social-link" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Concept World. All rights reserved. | <a href="#" style="color: var(--accent-green); text-decoration: none;">Privacy Policy</a> | <a href="#" style="color: var(--accent-green); text-decoration: none;">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll behavior
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(0, 0, 0, 0.6)';
+                navbar.style.backdropFilter = 'blur(25px)';
+            } else {
+                navbar.style.background = 'rgba(0, 0, 0, 0.4)';
+                navbar.style.backdropFilter = 'blur(20px)';
+            }
+        });
+    </script>
+</body>
+</html>

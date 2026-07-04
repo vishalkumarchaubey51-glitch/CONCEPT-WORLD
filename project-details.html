@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta id="metaDescription" name="description" content="View detailed project information and gallery for our exhibition stall designs in Patna, Bihar.">
+    <meta id="metaKeywords" name="keywords" content="exhibition stall design, booth fabrication, patna projects">
+    <meta name="author" content="Concept World">
+    
+    <!-- Open Graph -->
+    <meta id="ogUrl" property="og:url" content="https://www.conceptworld.in/project-details.html">
+    <meta id="ogTitle" property="og:title" content="Project Details - Concept World">
+    <meta id="ogDescription" property="og:description" content="View detailed exhibition project information.">
+    <meta id="ogImage" property="og:image" content="https://www.conceptworld.in/image/a1.jpeg">
+    
+    <title id="pageTitle">Project Details | Concept World</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="image/a1.jpeg">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Load Navbar -->
+    <script src="assets/js/load-navbar.js"></script>
+
+    <!-- Breadcrumb Section -->
+    <section class="bg-light py-3" style="margin-top: 70px;">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item"><a href="/projects.html">Projects</a></li>
+                    <li class="breadcrumb-item active" id="breadcrumbName">Project Details</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Project Details Section -->
+    <section class="py-5" id="projectDetailsSection">
+        <div class="container">
+            <div class="row">
+                <!-- Project Gallery -->
+                <div class="col-lg-8 mb-4">
+                    <div class="card border-0 shadow-sm mb-4" data-aos="fade-right">
+                        <div class="card-body p-0">
+                            <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators" id="carouselIndicators">
+                                    <!-- Indicators loaded here -->
+                                </div>
+                                <div class="carousel-inner" id="carouselInner">
+                                    <!-- Images loaded here -->
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project Info -->
+                <div class="col-lg-4" data-aos="fade-left">
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-3" id="projectCategory">Category</span>
+                            <h2 class="card-title mb-3" id="projectName">Project Name</h2>
+                            
+                            <div class="mb-3">
+                                <strong>Client Name</strong>
+                                <p class="text-muted" id="projectClient">-</p>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <strong>Event Name</strong>
+                                <p class="text-muted" id="projectEvent">-</p>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <strong>Year</strong>
+                                <p class="text-muted" id="projectYear">-</p>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <strong>Description</strong>
+                                <p class="text-muted" id="projectDescription">-</p>
+                            </div>
+                            
+                            <div class="d-grid gap-2">
+                                <a href="/contact.html" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-envelope me-2"></i>Inquire About This Project
+                                </a>
+                                <a href="/projects.html" class="btn btn-outline-primary">
+                                    <i class="fas fa-arrow-left me-2"></i>Back to Projects
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Thumbnails -->
+            <div class="mt-4">
+                <h4 class="mb-3">Project Gallery</h4>
+                <div class="row g-3" id="thumbnailGallery">
+                    <!-- Thumbnails loaded here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Projects Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="display-6 fw-bold mb-4">Related Projects</h2>
+            <div id="relatedProjectsContainer" class="row g-4">
+                <!-- Related projects loaded here -->
+                <div class="col-12 text-center">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Load Footer -->
+    <script src="assets/js/load-footer.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS (Animate On Scroll) -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Projects Data Loader -->
+    <script src="assets/js/projects-data.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Project Details Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', async function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const slug = urlParams.get('slug');
+
+            if (!slug) {
+                window.location.href = '/projects.html';
+                return;
+            }
+
+            const project = await getProjectBySlug(slug);
+
+            if (!project) {
+                window.location.href = '/projects.html';
+                return;
+            }
+
+            // Update page meta tags
+            document.getElementById('pageTitle').textContent = `${project.name} | Concept World`;
+            document.getElementById('metaDescription').setAttribute('content', project.description);
+            document.getElementById('ogTitle').setAttribute('content', `${project.name} - Concept World`);
+            document.getElementById('ogDescription').setAttribute('content', project.description);
+            document.getElementById('ogImage').setAttribute('content', `${window.location.origin}/${project.featured_image}`);
+
+            // Update breadcrumb
+            document.getElementById('breadcrumbName').textContent = project.name;
+
+            // Update project info
+            document.getElementById('projectCategory').textContent = project.category;
+            document.getElementById('projectName').textContent = project.name;
+            document.getElementById('projectClient').textContent = project.client;
+            document.getElementById('projectEvent').textContent = project.event;
+            document.getElementById('projectYear').textContent = project.year;
+            document.getElementById('projectDescription').textContent = project.description;
+
+            // Load carousel images
+            const carouselIndicators = document.getElementById('carouselIndicators');
+            const carouselInner = document.getElementById('carouselInner');
+
+            project.images.forEach((image, index) => {
+                // Add indicator
+                const indicator = document.createElement('button');
+                indicator.type = 'button';
+                indicator.setAttribute('data-bs-target', '#projectCarousel');
+                indicator.setAttribute('data-bs-slide-to', index);
+                if (index === 0) {
+                    indicator.classList.add('active');
+                    indicator.setAttribute('aria-current', 'true');
+                }
+                indicator.setAttribute('aria-label', `Slide ${index + 1}`);
+                carouselIndicators.appendChild(indicator);
+
+                // Add carousel item
+                const carouselItem = document.createElement('div');
+                carouselItem.classList.add('carousel-item');
+                if (index === 0) carouselItem.classList.add('active');
+                carouselItem.innerHTML = `
+                    <img src="${image}" class="d-block w-100" alt="Project Image ${index + 1}" style="max-height: 500px; object-fit: cover;">
+                `;
+                carouselInner.appendChild(carouselItem);
+
+                // Add thumbnail
+                const thumbnailCol = document.createElement('div');
+                thumbnailCol.classList.add('col-3', 'col-md-2');
+                thumbnailCol.innerHTML = `
+                    <img src="${image}" class="img-thumbnail cursor-pointer" alt="Thumbnail ${index + 1}" 
+                         style="height: 100px; width: 100%; object-fit: cover; cursor: pointer;" 
+                         onclick="document.querySelector('[data-bs-slide-to=\\'${index}\\']').click();">
+                `;
+                document.getElementById('thumbnailGallery').appendChild(thumbnailCol);
+            });
+
+            // Load related projects
+            const allProjects = await getAllPatnaProjects();
+            const relatedProjects = allProjects
+                .filter(p => p.category === project.category && p.slug !== project.slug)
+                .slice(0, 3);
+
+            const relatedContainer = document.getElementById('relatedProjectsContainer');
+            if (relatedProjects.length === 0) {
+                relatedContainer.innerHTML = '<div class="col-12 text-center text-muted">No related projects found.</div>';
+            } else {
+                const relatedHTML = relatedProjects.map((p, index) => `
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="${index * 100}">
+                        <div class="card border-0 shadow-sm project-card h-100">
+                            <div class="position-relative overflow-hidden">
+                                <img src="${p.featured_image || p.primary_image}" class="card-img-top" alt="${p.name}" 
+                                     style="height: 200px; object-fit: cover;">
+                                <div class="project-overlay">
+                                    <a href="/project-details.html?slug=${encodeURIComponent(p.slug)}" class="btn btn-light btn-sm">
+                                        <i class="fas fa-eye me-1"></i> View
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <span class="badge bg-primary mb-2">${p.category}</span>
+                                <h5 class="card-title">${p.name}</h5>
+                                <p class="card-text text-muted text-sm">${p.description.substring(0, 100)}...</p>
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+                relatedContainer.innerHTML = relatedHTML;
+                AOS.refresh();
+            }
+        });
+    </script>
+
+</body>
+</html>

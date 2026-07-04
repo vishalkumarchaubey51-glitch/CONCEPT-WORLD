@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibition Stand Design New Delhi | Exhibition Booth Fabrication at Pragati Maidan</title>
+    <meta name="description" content="Premier exhibition stall design & fabrication company in New Delhi, NCR. Custom booth design for Pragati Maidan, India Expo Centre & major trade shows.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #004E89;
+            --secondary-color: #FF6B35;
+            --dark-color: #1a1a2e;
+            --light-color: #f5f5f5;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .hero {
+            height: 100vh;
+            min-height: 600px;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('../../image/s5.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 1000px;
+            padding: 0 40px;
+            animation: fadeInUp 1s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 25px;
+            text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+            line-height: 1.2;
+        }
+
+        .hero .location-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 107, 53, 0.9);
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            color: rgba(255, 255, 255, 0.95);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 18px 45px;
+            background: linear-gradient(135deg, var(--secondary-color), #ff8c5a);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 35px;
+            font-weight: 600;
+            font-size: 1.05rem;
+            transition: all 0.4s ease;
+            box-shadow: 0 15px 40px rgba(255, 107, 53, 0.4);
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 50px rgba(255, 107, 53, 0.6);
+        }
+
+        .section-padding {
+            padding: 100px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-size: 3rem;
+            color: var(--dark-color);
+            margin-bottom: 15px;
+            font-weight: 800;
+        }
+
+        .section-title .line {
+            width: 120px;
+            height: 4px;
+            background: linear-gradient(90deg, transparent, var(--secondary-color), transparent);
+            margin: 0 auto 20px;
+        }
+
+        .section-title p {
+            color: #666;
+            font-size: 1.15rem;
+        }
+
+        .project-intro {
+            background: #fff;
+        }
+
+        .intro-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .intro-text h3 {
+            font-size: 2.2rem;
+            color: var(--dark-color);
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+
+        .intro-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(0, 78, 137, 0.08), rgba(255, 107, 53, 0.08));
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            border-left: 5px solid var(--secondary-color);
+        }
+
+        .highlight-box h4 {
+            font-size: 1.4rem;
+            color: var(--dark-color);
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .highlight-box ul {
+            list-style: none;
+        }
+
+        .highlight-box ul li {
+            padding: 10px 0;
+            color: #555;
+            font-size: 1.05rem;
+        }
+
+        .highlight-box ul li i {
+            color: var(--secondary-color);
+            margin-right: 12px;
+            font-size: 1.1rem;
+        }
+
+        .intro-image {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        .intro-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .intro-image:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-section {
+            background: linear-gradient(180deg, #f9fafb 0%, #ffffff 100%);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+
+        .gallery-item {
+            background: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 70px rgba(0, 78, 137, 0.15);
+        }
+
+        .gallery-image {
+            position: relative;
+            height: 350px;
+            overflow: hidden;
+        }
+
+        .gallery-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .gallery-item:hover .gallery-image img {
+            transform: scale(1.15);
+        }
+
+        .gallery-content {
+            padding: 35px;
+        }
+
+        .gallery-content h3 {
+            font-size: 1.8rem;
+            color: var(--dark-color);
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .gallery-content p {
+            color: #666;
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+
+        .project-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, var(--secondary-color), #ff8c5a);
+            color: #fff;
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.4);
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            color: #fff;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2.8rem;
+            margin-bottom: 25px;
+            font-weight: 800;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.95;
+        }
+
+        .btn-white {
+            background: #fff;
+            color: var(--secondary-color);
+        }
+
+        .btn-white:hover {
+            background: var(--light-color);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .intro-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title h2 {
+                font-size: 2.2rem;
+            }
+
+            .cta-section h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="location-badge">
+                <span>🇮🇳</span>
+                <span>New Delhi, NCR</span>
+            </div>
+            <h1>Exhibition Stand Design in New Delhi</h1>
+            <p>World-Class Exhibition Booth Fabrication at Pragati Maidan & India Expo Centre</p>
+            <a href="../../index.html#contact" class="btn">Get a Free Quote</a>
+        </div>
+    </section>
+
+    <!-- PROJECT INTRO -->
+    <section class="project-intro section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Premier Exhibition Stand Contractors in New Delhi</h2>
+                <div class="line"></div>
+                <p>Creating Award-Winning Exhibition Experiences at India's Capital</p>
+            </div>
+
+            <div class="intro-content">
+                <div class="intro-text">
+                    <h3>India's Leading Exhibition Partner</h3>
+                    <p>As a top-tier <strong>exhibition stall design company in New Delhi</strong>, we bring international design standards to India's premier exhibition venues. Our team has successfully delivered hundreds of projects at Pragati Maidan, India Expo Centre Greater Noida, and other prestigious venues across the National Capital Region.</p>
+                    <p>We understand the fast-paced nature of Delhi's exhibition circuit and deliver cutting-edge booth designs that capture attention and drive business results. From concept to completion, we ensure your exhibition stand reflects your brand's excellence.</p>
+
+                    <div class="highlight-box">
+                        <h4>Delhi Exhibition Excellence</h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> <strong>Pragati Maidan Specialists:</strong> Extensive experience at India's largest venue</li>
+                            <li><i class="fas fa-check-circle"></i> <strong>International Standards:</strong> World-class design and execution</li>
+                            <li><i class="fas fa-check-circle"></i> <strong>Rapid Turnaround:</strong> Meeting tight Delhi exhibition schedules</li>
+                            <li><i class="fas fa-check-circle"></i> <strong>GST Compliant:</strong> Transparent pricing with all certifications</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="intro-image">
+                    <img loading="lazy" decoding="async" src="../../image/s6.jpeg" alt="Exhibition Stall Design New Delhi">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section class="gallery-section section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Delhi Exhibition Portfolio</h2>
+                <div class="line"></div>
+                <p>Premium Exhibition Stand Designs Delivered at Major Delhi Trade Shows</p>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img loading="lazy" decoding="async" src="../../image/s7.jpeg" alt="Pragati Maidan Exhibition Stand Design">
+                        <div class="project-badge">Pragati Maidan</div>
+                    </div>
+                    <div class="gallery-content">
+                        <h3>International Tech Expo - Pragati Maidan</h3>
+                        <p>Spectacular double-height exhibition booth designed for India's largest technology trade show at Pragati Maidan. Featured advanced LED video walls, interactive product demonstrations, private meeting cabins, and dedicated press conference area. The contemporary design with clean lines and strategic lighting attracted over 5,000 visitors, making it one of the most visited stands at the event.</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img loading="lazy" decoding="async" src="../../image/s8.jpeg" alt="India Expo Centre Exhibition Booth">
+                        <div class="project-badge">India Expo Centre</div>
+                    </div>
+                    <div class="gallery-content">
+                        <h3>Auto Components Show - Greater Noida</h3>
+                        <p>Industrial-themed exhibition stand at India Expo Centre showcasing automotive technology. The modular design incorporated brand colors with metallic finishes, creating a professional yet inviting atmosphere. Featured multiple product display zones, technical specification walls, and comfortable seating areas for B2B meetings. Our design maximized the allocated space while maintaining excellent traffic flow throughout the booth.</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img loading="lazy" decoding="async" src="../../image/s9.jpeg" alt="Healthcare Exhibition Stand New Delhi">
+                        <div class="project-badge">Medical Expo</div>
+                    </div>
+                    <div class="gallery-content">
+                        <h3>India Health Expo - New Delhi</h3>
+                        <p>Clinical and sophisticated exhibition booth design for leading healthcare company at India's premier medical exhibition. The stand combined professional aesthetics with welcoming ambiance using soft lighting, curved reception desk, and private consultation areas. Specialized lighting for medical equipment displays, multimedia presentation zones, and compliance with healthcare exhibition standards resulted in highest footfall in the medical devices category.</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img loading="lazy" decoding="async" src="../../image/s10.jpeg" alt="India International Trade Fair IITF Exhibition Stand">
+                        <div class="project-badge">IITF 2025</div>
+                    </div>
+                    <div class="gallery-content">
+                        <h3>India International Trade Fair - Pavilion Design</h3>
+                        <p>Grand pavilion design for state government at India International Trade Fair, Pragati Maidan. The 1200 sq ft space showcased regional products, handicrafts, and industrial capabilities through thoughtfully designed display systems. Traditional architectural elements blended with modern exhibition techniques, featuring interactive touch screens, product demonstration areas, cultural performance space, and VIP lounge. The pavilion won the Best Display Award at IITF 2025.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section section-padding">
+        <div class="container">
+            <h2>Ready for Your Next Delhi Exhibition?</h2>
+            <p>Partner with New Delhi's most trusted exhibition stand design company. We deliver exceptional booth fabrication solutions for Pragati Maidan, India Expo Centre, and all major trade shows across NCR. Get your custom quote today.</p>
+            <a href="../../index.html#contact" class="btn btn-white">Contact Us Now</a>
+        </div>
+    </section>
+</body>
+</html>
