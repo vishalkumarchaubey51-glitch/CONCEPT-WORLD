@@ -1,0 +1,56 @@
+{
+  "site": {
+    "name": "Concept World",
+    "tagline": "Leading Exhibition Stall Designer in Patna, Bihar",
+    "url": "",
+    "description": "Leading exhibition stall designer and stand builders in Patna, Bihar. We offer premium exhibition booth design, fabrication, and installation services for trade shows, expos, and exhibitions across India."
+  },
+  "contact": {
+    "email": "info@conceptworld.in",
+    "email_contact": "contact@conceptworld.in",
+    "email_noreply": "noreply@conceptworld.in",
+    "phone_1": "+91 8092471472",
+    "phone_2": "+91 8092471471",
+    "whatsapp": "+91 8092471472"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/conceptworld",
+    "instagram": "https://www.instagram.com/conceptworld",
+    "linkedin": "https://www.linkedin.com/company/conceptworld",
+    "twitter": "https://twitter.com/conceptworld"
+  },
+  "address": {
+    "headquarters": "MM Media Exhibitions LLP, Shastri Nagar, Patna",
+    "city": "Patna",
+    "state": "Bihar",
+    "country": "India",
+    "postal_code": "800001",
+    "latitude": "25.5941",
+    "longitude": "85.1376"
+  },
+  "business": {
+    "years_experience": 15,
+    "total_projects": 500,
+    "total_clients": 350,
+    "countries_served": 14,
+    "team_size": 50
+  },
+  "seo": {
+    "default_title": "Exhibition Stall Designer Patna | Exhibition Stand Builders Bihar | Concept World",
+    "default_description": "Leading exhibition stall designer and stand builders in Patna, Bihar offering custom booth design, fabrication & installation services for trade shows and expos.",
+    "default_keywords": "exhibition stall design Patna, exhibition stand builders Patna, exhibition stall fabrication, exhibition booth design",
+    "author": "Concept World",
+    "geo_region": "IN-BR",
+    "geo_placename": "Patna"
+  },
+  "branding": {
+    "primary_color": "#ff6b35",
+    "secondary_color": "#004e89",
+    "dark_color": "#1a1a2e",
+    "light_color": "#f8f9fa"
+  },
+  "features": {
+    "logo_image": "image/a1.jpeg",
+    "favicon": "image/a1.jpeg"
+  }
+}

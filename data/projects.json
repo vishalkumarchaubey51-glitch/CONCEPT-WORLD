@@ -1,0 +1,280 @@
+{
+  "patnaProjects": [
+    {
+      "id": 1,
+      "name": "APICON 2026",
+      "slug": "apicon-2026",
+      "client": "ERIS Pharmaceuticals",
+      "event": "APICON 2026 Pharma Conference",
+      "category": "Pharmaceutical Exhibition",
+      "description": "Premium pharmaceutical exhibition stand design for APICON 2026. Innovative booth design featuring modern aesthetics and pharmaceutical branding.",
+      "featured_image": "Exhibition Stall Design Patna/APICON 2026/ERIS.jpeg",
+      "primary_image": "Exhibition Stall Design Patna/APICON 2026/ERIS.jpeg",
+      "images": [
+        "Exhibition Stall Design Patna/APICON 2026/ERIS.jpeg"
+      ],
+      "year": 2026,
+      "is_featured": true,
+      "display_order": 1
+    },
+    {
+      "id": 2,
+      "name": "Bihar Beauty Expo 2025",
+      "slug": "bihar-beauty-expo-2025",
+      "client": "Bihar Beauty Association",
+      "event": "Bihar Beauty Expo 2025",
+      "category": "Beauty & Cosmetics",
+      "description": "Stunning exhibition booth design for Bihar Beauty Expo 2025. Featuring modern aesthetics for beauty and cosmetics products showcase.",
+      "featured_image": "Exhibition Stall Design Patna/Bihar Beauty Expo 2025/beauty.jpeg",
+      "primary_image": "Exhibition Stall Design Patna/Bihar Beauty Expo 2025/beauty.jpeg",
+      "images": [
+        "Exhibition Stall Design Patna/Bihar Beauty Expo 2025/beauty.jpeg"
+      ],
+      "year": 2025,
+      "is_featured": true,
+      "display_order": 2
+    },
+    {
+      "id": 3,
+      "name": "Bihar Medical Expo 2025",
+      "slug": "bihar-medical-expo-2025",
+      "client": "Bihar Medical Council",
+      "event": "Bihar Medical Expo 2025",
+      "category": "Medical & Healthcare",
+      "description": "Professional medical exhibition stand for Bihar Medical Expo 2025. Designed to showcase medical equipment and healthcare solutions.",
+      "featured_image": "Exhibition Stall Design Patna/Bihar Medical Expo 2025/medical.jpeg",
+      "primary_image": "Exhibition Stall Design Patna/Bihar Medical Expo 2025/medical.jpeg",
+      "images": [
+        "Exhibition Stall Design Patna/Bihar Medical Expo 2025/medical.jpeg"
+      ],
+      "year": 2025,
+      "is_featured": true,
+      "display_order": 3
+    },
+    {
+      "id": 4,
+      "name": "Optics Fair Expo 2024",
+      "slug": "optics-fair-expo-2024",
+      "client": "Optics Industry Association",
+      "event": "Optics Fair Expo 2024",
+      "category": "Optics & Technology",
+      "description": "Innovative exhibition booth for Optics Fair Expo 2024. Showcasing cutting-edge optical and technology products.",
+      "featured_image": "Exhibition Stall Design Patna/Optics Fair Expo 2024/optics.jpeg",
+      "primary_image": "Exhibition Stall Design Patna/Optics Fair Expo 2024/optics.jpeg",
+      "images": [
+        "Exhibition Stall Design Patna/Optics Fair Expo 2024/optics.jpeg"
+      ],
+      "year": 2024,
+      "is_featured": false,
+      "display_order": 4
+    },
+    {
+      "id": 5,
+      "name": "Pharma Business Expo Patna",
+      "slug": "pharma-business-expo-patna",
+      "client": "Pharma Business Network",
+      "event": "Pharma Business Expo",
+      "category": "Pharmaceutical Business",
+      "description": "Comprehensive pharmaceutical business exhibition booth. Perfect for pharma companies to showcase products and services.",
+      "featured_image": "Exhibition Stall Design Patna/Pharma Business Expo, Patna/pharma.jpeg",
+      "primary_image": "Exhibition Stall Design Patna/Pharma Business Expo, Patna/pharma.jpeg",
+      "images": [
+        "Exhibition Stall Design Patna/Pharma Business Expo, Patna/pharma.jpeg"
+      ],
+      "year": 2024,
+      "is_featured": false,
+      "display_order": 5
+    },
+    {
+      "id": 6,
+      "name": "Renewable Energy & EV Expo 2025",
+      "slug": "renewable-energy-ev-expo-2025",
+      "client": "Renewable Energy Association",
+      "event": "Renewable Energy & EV Expo 2025",
+      "category": "Energy & Sustainability",
+      "description": "Modern exhibition booth for renewable energy and electric vehicle showcase. Designed with sustainability in mind.",
+      "featured_image": "Exhibition Stall Design Patna/Renewable Energy & ev Expo 2025/energy.jpeg",
+      "primary_image": "Exhibition Stall Design Patna/Renewable Energy & ev Expo 2025/energy.jpeg",
+      "images": [
+        "Exhibition Stall Design Patna/Renewable Energy & ev Expo 2025/energy.jpeg"
+      ],
+      "year": 2025,
+      "is_featured": true,
+      "display_order": 6
+    },
+    {
+      "id": 7,
+      "name": "Solar & Storage Confex Bihar 2025",
+      "slug": "solar-storage-confex-bihar-2025",
+      "client": "Bihar Energy Corporation",
+      "event": "Solar & Storage Confex Bihar 2025",
+      "category": "Solar Energy",
+      "description": "Professional solar energy exhibition booth design. Showcasing solar panels, storage solutions and renewable technologies.",
+      "featured_image": "Exhibition Stall Design Patna/Solar & Storage Confex Bihar 2025/solar.jpeg",
+      "primary_image": "Exhibition Stall Design Patna/Solar & Storage Confex Bihar 2025/solar.jpeg",
+      "images": [
+        "Exhibition Stall Design Patna/Solar & Storage Confex Bihar 2025/solar.jpeg"
+      ],
+      "year": 2025,
+      "is_featured": true,
+      "display_order": 7
+    }
+  ],
+  "globalProjects": [
+    {
+      "id": 101,
+      "location": "Berlin",
+      "country": "Germany",
+      "slug": "exhibition-stall-design-berlin",
+      "category": "International Exhibition",
+      "description": "Premium exhibition stall design services in Berlin, Germany",
+      "folder": "projects/exhibition-stall-design-berlin"
+    },
+    {
+      "id": 102,
+      "location": "Dubai",
+      "country": "UAE",
+      "slug": "exhibition-stall-design-dubai",
+      "category": "International Exhibition",
+      "description": "Expert exhibition booth design and fabrication in Dubai, UAE",
+      "folder": "projects/exhibition-stall-design-dubai"
+    },
+    {
+      "id": 103,
+      "location": "Egypt",
+      "country": "Egypt",
+      "slug": "exhibition-stall-design-egypt",
+      "category": "International Exhibition",
+      "description": "Professional exhibition stall design services in Cairo, Egypt",
+      "folder": "projects/exhibition-stall-design-egypt"
+    },
+    {
+      "id": 104,
+      "location": "Iran",
+      "country": "Iran",
+      "slug": "exhibition-stall-design-iran",
+      "category": "International Exhibition",
+      "description": "Exhibition booth design services across Iran",
+      "folder": "projects/exhibition-stall-design-iran"
+    },
+    {
+      "id": 105,
+      "location": "Jordan",
+      "country": "Jordan",
+      "slug": "exhibition-stall-design-jordan",
+      "category": "International Exhibition",
+      "description": "Premium exhibition stall design in Amman, Jordan",
+      "folder": "projects/exhibition-stall-design-jordan"
+    },
+    {
+      "id": 106,
+      "location": "London",
+      "country": "United Kingdom",
+      "slug": "exhibition-stall-design-london",
+      "category": "International Exhibition",
+      "description": "Expert exhibition booth design and fabrication in London, UK",
+      "folder": "projects/exhibition-stall-design-london"
+    },
+    {
+      "id": 107,
+      "location": "Melbourne",
+      "country": "Australia",
+      "slug": "exhibition-stall-design-melbourne",
+      "category": "International Exhibition",
+      "description": "Professional exhibition stall design services in Melbourne, Australia",
+      "folder": "projects/exhibition-stall-design-melbourne"
+    },
+    {
+      "id": 108,
+      "location": "Mumbai",
+      "country": "India",
+      "slug": "exhibition-stall-design-mumbai",
+      "category": "India Exhibition",
+      "description": "Premium exhibition booth design services in Mumbai, India",
+      "folder": "projects/exhibition-stall-design-mumbai"
+    },
+    {
+      "id": 109,
+      "location": "New Delhi",
+      "country": "India",
+      "slug": "exhibition-stall-design-new-delhi",
+      "category": "India Exhibition",
+      "description": "Expert exhibition stall design and fabrication in New Delhi, India",
+      "folder": "projects/exhibition-stall-design-new-delhi"
+    },
+    {
+      "id": 110,
+      "location": "New York",
+      "country": "USA",
+      "slug": "exhibition-stall-design-new-york",
+      "category": "International Exhibition",
+      "description": "Professional exhibition booth design services in New York, USA",
+      "folder": "projects/exhibition-stall-design-new-york"
+    },
+    {
+      "id": 111,
+      "location": "Patna",
+      "country": "India",
+      "slug": "exhibition-stall-design-patna",
+      "category": "India Exhibition",
+      "description": "Leading exhibition stall design services in Patna, Bihar",
+      "folder": "projects/exhibition-stall-design-patna"
+    },
+    {
+      "id": 112,
+      "location": "Qatar",
+      "country": "Qatar",
+      "slug": "exhibition-stall-design-qatar",
+      "category": "International Exhibition",
+      "description": "Premium exhibition booth design in Doha, Qatar",
+      "folder": "projects/exhibition-stall-design-qatar"
+    },
+    {
+      "id": 113,
+      "location": "Saudi Arabia",
+      "country": "Saudi Arabia",
+      "slug": "exhibition-stall-design-saudi-arabia",
+      "category": "International Exhibition",
+      "description": "Expert exhibition stall design services across Saudi Arabia",
+      "folder": "projects/exhibition-stall-design-saudi-arabia"
+    },
+    {
+      "id": 114,
+      "location": "Singapore",
+      "country": "Singapore",
+      "slug": "exhibition-stall-design-singapore",
+      "category": "International Exhibition",
+      "description": "Professional exhibition booth design and fabrication in Singapore",
+      "folder": "projects/exhibition-stall-design-singapore"
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "Patna, Bihar",
+      "slug": "exhibition-stall-contractor-patna",
+      "country": "India",
+      "description": "Leading exhibition stall contractor in Patna offering complete booth design and fabrication services for trade shows and exhibitions.",
+      "services": ["Custom Stall Design", "Booth Fabrication", "Complete Installation", "On-site Support"],
+      "htmlFile": "locations/patna.html"
+    },
+    {
+      "id": 2,
+      "name": "New Delhi",
+      "slug": "exhibition-stall-designer-new-delhi",
+      "country": "India",
+      "description": "Expert exhibition stall designer in New Delhi providing premium booth design and installation services.",
+      "services": ["Custom Booth Design", "High-End Fabrication", "Professional Installation", "Event Support"],
+      "htmlFile": "locations/delhi.html"
+    },
+    {
+      "id": 3,
+      "name": "Dubai",
+      "slug": "exhibition-stand-contractor-dubai",
+      "country": "UAE",
+      "description": "Professional exhibition stand contractor in Dubai, UAE. Specialized in international trade shows and exhibitions.",
+      "services": ["International Booth Design", "Premium Fabrication", "Logistics Support", "On-site Management"],
+      "htmlFile": "locations/dubai.html"
+    }
+  ]
+}
